@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project/src/pages/alert_page.dart';
 import 'package:project/src/providers/menu_provider.dart';
 import 'package:project/src/utils/icono_string_util.dart';
 
@@ -39,8 +38,9 @@ _listaItems(List<dynamic> data, BuildContext context) {
       leading: getIcon(opt['icon']),
       trailing: Icon(Icons.keyboard_arrow_down_outlined, color: Colors.blue),
       onTap: () {
-        final route = MaterialPageRoute(builder: (context) => AlertPage());
-        Navigator.push(context, route);
+        Navigator.pushNamed(context, opt['ruta']);
+        // final route = MaterialPageRoute(builder: (context) => AlertPage());
+        // Navigator.push(context, route);
       },
     );
 
