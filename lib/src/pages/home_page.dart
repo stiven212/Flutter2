@@ -32,6 +32,7 @@ Widget _lista() {
 
 _listaItems(List<dynamic> data, BuildContext context) {
   final List<Widget> opciones = [];
+
   data.forEach((opt) {
     final widgetTemp = ListTile(
       title: Text(opt['texto']),
