@@ -160,19 +160,19 @@ class _InputPageState extends State<InputPage> {
     return Row(
       children: <Widget>[
         Icon(Icons.select_all),
-        SizedBox(width:30.0),
+        SizedBox(width: 30.0),
         Expanded(
           child: DropdownButton(
-          value: _opcionSeleccionada,
-          items: getOpcionesDropDown(),
-          onChanged: (opt) {
-          setState(() {
-            _opcionSeleccionada = opt;
-          });
-      },
+            value: _opcionSeleccionada,
+            items: getOpcionesDropDown(),
+            onChanged: (opt) {
+              setState(() {
+                _opcionSeleccionada = opt;
+              });
+            },
           ),
         )
-
       ],
     );
   }
+}
